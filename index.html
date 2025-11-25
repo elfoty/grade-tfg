@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Curricular</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.23.0/cytoscape.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <div id="cy"></div>
+
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Detalhes</h2>
+                <p>Grade Curricular</p>
+            </div>
+            
+            <div id="info-content" style="display: none;">
+                <h3 id="lbl-nome" class="materia-titulo">Nome da Matéria</h3>
+                <span id="lbl-periodo" class="badge">Período</span>
+                
+                <div class="info-group">
+                    <label>Pré-requisitos (Necessário):</label>
+                    <p id="lbl-pre">Nenhum</p>
+                </div>
+
+                <div class="info-group">
+                    <label>Desbloqueia (Futuro):</label>
+                    <p id="lbl-pos">Nada</p>
+                </div>
+            </div>
+
+            <div id="info-placeholder">
+                <p>Passe o mouse sobre uma disciplina para ver suas conexões.</p>
+            </div>
+        </aside>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

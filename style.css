@@ -1,0 +1,59 @@
+/* style.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Trava rolagem da página */
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f8fafc; /* Fundo geral claro */
+}
+
+.main-container {
+    display: flex; /* Coloca um do lado do outro */
+    width: 100vw;
+    height: 100vh;
+}
+
+/* O Grafo ocupa todo o espaço restante */
+#cy {
+    flex-grow: 1;
+    height: 100%;
+    background-color: #fff; /* Fundo do grafo */
+    position: relative;
+}
+
+/* Sidebar Fixa na Direita */
+.sidebar {
+    width: 320px; /* Largura fixa */
+    min-width: 320px;
+    background-color: #f1f5f9;
+    border-left: 1px solid #cbd5e1;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.05);
+}
+
+/* Estilos da Sidebar */
+.sidebar-header h2 { margin: 0; color: #1e293b; }
+.sidebar-header p { margin: 5px 0 20px 0; color: #64748b; font-size: 0.9em; }
+
+.materia-titulo { color: #2563eb; margin-bottom: 5px; font-size: 1.2rem; }
+.badge { 
+    background: #e2e8f0; color: #475569; 
+    padding: 4px 10px; border-radius: 4px; 
+    font-size: 0.8rem; font-weight: bold; 
+    display: inline-block; margin-bottom: 20px;
+}
+
+.info-group { margin-bottom: 20px; }
+.info-group label { 
+    display: block; font-size: 0.75rem; 
+    text-transform: uppercase; color: #94a3b8; font-weight: bold; 
+}
+.info-group p { margin: 5px 0; font-size: 0.95rem; line-height: 1.4; color: #334155; }
+
+#info-placeholder { color: #94a3b8; font-style: italic; margin-top: 50px; text-align: center; }
